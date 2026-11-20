@@ -36,12 +36,12 @@ namespace Filmek1120
         }
         private void Filmhossz(object sender, RoutedEventArgs e)
         {
-            Filmek leghosszabb = Filmek.[0];
+            Filmek leghosszabb = filmek[0];
             foreach (var item in filmek)
             {
                 if (item.Hossz > leghosszabb.Hossz)
                 {
-                    leghosszabb.Hossz;
+                    leghosszabb = item;
                 }
             }
             MessageBox.Show($"A leghosszabb film: {leghosszabb.Cim} Hossza: {leghosszabb.Hossz}");
